@@ -1,6 +1,7 @@
 
 let thisYear = 2022;
 let yearOfBirth = prompt("Please Enter Your Year Of Birth") //Prompt to enter year of birth.
+
 let age = thisYear - yearOfBirth;
 console.log(age);
 
@@ -16,6 +17,12 @@ else if (18<=age<=36) {
 else{
     console.log('Please enter a number');
 }
+
+
+
+
+
+
 
 
 

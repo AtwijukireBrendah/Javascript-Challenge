@@ -1,25 +1,24 @@
 
-function fizzBuzz(){
- 
+function fizzBuzz(string1,string2){
     
-    let x = prompt("Insert first string")
-    let y = prompt("Insert second string")
 
-    if((x+y).length%3==0 && (x+y).length%5==0) {
-        console.log('FizzBuzz');
+   let stringLength= string1.length + string2.length
+
+    if(stringLength%3===0 && stringLength%5===0) {
+        return'FizzBuzz';
     }  
-else if((x+y).length%3==0){
-        console.log('Fizz');
+else if(stringLength%3===0){
+        return 'Fizz';
     }   
-else if((x+y).length%5==0) {    
-    console.log('Buzz');
+else if(stringLength%5===0) {    
+        return 'Buzz';
 }
 else{
-    console.log('Combined length not divisible by neither 3 nor 5');
+    return 'Combined length not divisible by neither 3 nor 5';
 }
 }
 
-fizzBuzz()
+fizzBuzz("Brendah","Atwijukire")
 
 
 

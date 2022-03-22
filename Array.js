@@ -1,7 +1,7 @@
 
-function sortArray(){
+function sortArray(someArray){
 
-let someArray = [3.0,'a',7,'x','20','d',4,'f',8];
+//let someArray = [5.0,'a',7,'m','20','d',4,'f',8];
 let odds = [];
 let evens =[];
 let chars =[];
@@ -23,14 +23,18 @@ const returnObject = {
       chars.push(someArray[i]);
       }
     }
-  
+
 console.log(returnObject)  // to show object values in console window
+
+evens.sort((a, b) => a - b);
+odds.sort((a, b) => a - b);
+chars.sort((a, b) => a - b);
 
 return returnObject;
 
 }
 
-sortArray()
+sortArray([5.0,'a',7,'m','20','d',4,'f',8])
 
 
 
